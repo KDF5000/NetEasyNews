@@ -30,3 +30,9 @@ class RspiderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+class NeteasynewsItem(scrapy.Item):
+    title = scrapy.Field()
+    crawled = scrapy.Field()
+    spider = scrapy.Field()
+    url = scrapy.Field()

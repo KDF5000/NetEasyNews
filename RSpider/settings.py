@@ -113,7 +113,7 @@ ITEM_PIPELINES = {
 
 # 指定redis的地址和端口(可选，程序将使用默认的地址localhost:6379)
 REDIS_HOST = 'localhost'
-REDIS_PORT = 6378
+REDIS_PORT = 6379
 
 # 声明redis的url地址（可选）
 # 如果设置了这一项，则程序会有限采用此项设置，忽略REDIS_HOST 和 REDIS_PORT的设置
@@ -123,5 +123,5 @@ REDIS_PORT = 6378
 
 #------------graphite setting ---------------------------
 STATS_CLASS = 'RSpider.statscol.graphite.RedisGraphiteStatsCollector'
-GRAPHITE_HOST = '192.168.0.107'
+GRAPHITE_HOST = '127.0.0.1'
 GRAPHITE_PORT = 2003
